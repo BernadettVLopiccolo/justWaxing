@@ -37,6 +37,7 @@ li {
 
 .dropdown-content a:hover {
 	background-color: #f1f1f1;
+    cursor: pointer;
 }
 
 .dropdown:hover .dropdown-content {
@@ -75,26 +76,59 @@ ul {
 	background-color: #e5e5e5 !important;
 }
 
+#logoContainer {
+    margin-left: 40px;
+    /*margin-top: 30px;*/
+    text-align: center;
+    border: 3px solid;
+    width: 300px;
+    height: 110px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-family: Komoda !important;
+    color: #ffffff;
+    font-size: 40px !important;
+    /*letter-spacing: 1px;*/
+    display: inline-block;
+    transform: scale(.4, 1);
+}
+
+h1:hover {
+    color: #fff;
+}
+
+h4 {
+    font-family: Komoda !important;
+    font-style: italic;
+    padding-top: -7px;
+}
+
+
 nav {
+    padding-top: 7px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	/*padding: 30px 20px 30px 100px;*/
     /*background-color: #cfc4d3;*/
     background-color: #e7d9cc;
+    height: 123px;
 }
 
-#img {
+
+/*#img {
     margin-left: 40px;
-    margin-top: 20px;
+    margin-top: 20px;*/
     /*margin-bottom: -50px;*/
-}
+/*}*/
 
-#navBar{
-	margin-top: -80px;
-	margin-bottom: 10px;
+/*#navBar{
+*/	/*margin-top: -80px;*/
+	/*margin-bottom: 10px;
 	margin-left: 800px;
 
-}
+}*/
 
 /*#backgrndImg {
     background-image: url("../images/bodyImg.jpg");

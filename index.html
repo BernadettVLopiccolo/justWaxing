@@ -14,12 +14,19 @@
    <body>
       <nav>
          <div class="row">
-            <div class="col-md-4" id="img">
-               <img src="assets/images/logo.png">
+            <div class="col-md-4">
+                <!-- <div class="col-md-4" id="img"> -->
+               <div class="row" id="logoContainer">
+                  <div class="col-md-12" class="justWaxing"><h1>JUST WAXING</h1></div>
+               <div class="row">
+                  <div class="col-md-12" class="profSzort"><h4>Professzionalis Szõrtelenítés</h4></div>
+               </div>
+               <!-- <img src="assets/images/jWingLogo.png" width="500px" height="200px"> -->
             </div>
+         </div>
             <div class="col-md-8" id="navBar">
                <ul>
-                  <li data-toggle="modal" data-target="#rolunkModal">Rolunk</li>
+                  <li data-toggle="modal" data-target="#rolunkModal">Rólunk</li>
                   <!-- Rolunk Modal -->
                   <div id="rolunkModal" class="modal fade" role="dialog">
                      <div class="modal-dialog">
@@ -33,7 +40,9 @@
                            <div class="modal-body">
                               <div class="row">
                                  <div class="col-md-12">
-                                    <p>Bemutatkozas</p>
+                                    <p>A Just waxing egy professzionális gyantázással foglakozó szalon, ahol kortól és nemtől függetlenül mindenki igénybe veheti a szolgáltatásainkat.</p>
+                                    <p>Egy paragrafus rólad, tapasztalat, mért szereted amit csinálsz.</p>
+                                    <p>Miért fontos a gyantázás. Sportoláshoz stb. bele is írhatod hogy te magad is futsz.</p>
                                  </div>
                               </div>
                            </div>
@@ -43,7 +52,14 @@
                         </div>
                      </div>
                   </div>
-                  <li data-toggle="modal" data-target="#idopontModal">Bejelentkezes</li>
+                   <div class="dropdown" style="float:left;">
+                     <li class="dropbtn">Szolgáltatások</li>
+                     <div class="dropdown-content" style="left:0;">
+                        <a data-toggle="modal" data-target="#holgyekModal">Hölgyek</a>
+                        <a data-toggle="modal" data-target="#urakModal">Urak</a>
+                     </div>
+                  </div>
+                  <li data-toggle="modal" data-target="#idopontModal">Bejelentkezés</li>
                   <!-- Bejelentkezes Modal -->
                   <div id="idopontModal" class="modal fade" role="dialog">
                      <div class="modal-dialog">
@@ -57,9 +73,9 @@
                            <div class="modal-body">
                               <div class="row">
                                  <div class="col-md-12">
-                                    <p>Nyitva tartas</p>
+                                    <p>Nyitva tartás</p>
                                     <p>Telefon</p>
-                                    <p>Cim</p>
+                                    <p>Cím</p>
                                  </div>
                               </div>
                            </div>
@@ -69,16 +85,107 @@
                         </div>
                      </div>
                   </div>
-                  <div class="dropdown" style="float:left;">
-                     <li class="dropbtn">Szolgaltatasok</li>
-                     <div class="dropdown-content" style="left:0;">
-                        <a href="#">Holgyek</a>
-                        <a href="#">Urak</a>
+                  <li data-toggle="modal" data-target="#gyantaModal">A gyantáról</li>
+                   <!-- Gyanta Modal -->
+                  <div id="gyantaModal" class="modal fade" role="dialog">
+                     <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <div class="modalLogo">
+                              </div>
+                           </div>
+                           <div class="modal-body">
+                              <div class="row">
+                                 <div class="col-md-6">
+                                    <p>Krem Gyanta</p>
+                                 </div>
+                                  <div class="col-md-6">
+                                    <p>Patronos Gyanta</p>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <p>A gyantazas menete</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </ul>
          </div>
       </div>
+
+      <!-- Urak Arlista -->
+                          <div id="urakModal" class="modal fade" role="dialog">
+                     <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <div class="modalLogo">
+                              </div>
+                           </div>
+                           <div class="modal-body">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+  <!-- Holgyek Arlista -->
+                  <div id="holgyekModal" class="modal fade" role="dialog">
+                     <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <div class="modalLogo">
+                              </div>
+                           </div>
+                           <div class="modal-body">
+                             <table class="table table-bordered" class="table table-responsive">
+                                 <thead>
+                                    <tr>
+                                       <th>#</th>
+                                       <th>Testrész</th>
+                                       <th>Árak</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <th scope="row">-</th>
+                                       <td>Szemöldõk</td>
+                                       <td>1000Ft</td>
+                                    </tr>
+                                    <tr>
+                                       <th scope="row">-</th>
+                                       <td>South San Jose, Morgan Hill, San Martin, Gilroy, Hollister</td>
+                                       <td>Wednesday Weekly</td>
+                                    </tr>
+                                    <tr>
+                                       <th scope="row">-</th>
+                                       <td colspan="3">If your Area is not listed below, please contact us - we are probably in your neighborhood, too!</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
       </nav>
       <div class="container">
           <div class="copyright">
