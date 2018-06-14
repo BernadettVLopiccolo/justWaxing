@@ -99,7 +99,7 @@ h1:hover {
     color: #fff;
 }
 
-h4 {
+h5 {
     font-family: Komoda !important;
     font-style: italic;
     padding-top: -7px;
@@ -114,6 +114,19 @@ nav {
     /*background-color: #cfc4d3;*/
     background-color: #e7d9cc;
     height: 123px;
+}
+
+p {
+    text-align: center;
+    color: #000 !important;
+    font-family: comic sans ms;
+}
+
+h4 {
+    text-align: center;
+    text-decoration: underline;
+    font-family: comic sans ms !important;
+    font-weight: bold;
 }
 
 
