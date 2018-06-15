@@ -3,6 +3,9 @@
    <head>
       <title>Just Waxing</title>
       <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript" src="assets/js/web.js"></script>
+      <!-- <script src="https://cdn.jsdelivr.net/npm/typeit@VERSION_NUMBER/dist/typeit.min.js"/> -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -15,15 +18,19 @@
       <nav>
          <div class="row">
             <div class="col-md-4">
-                <!-- <div class="col-md-4" id="img"> -->
+               <!-- <div class="col-md-4" id="img"> -->
                <div class="row" id="logoContainer">
-                  <div class="col-md-12" class="justWaxing"><h1>JUST WAXING</h1></div>
-               <div class="row">
-                  <div class="col-md-12" class="profSzort"><h5>Professzionalis Szõrtelenítés</h5></div>
+                  <div class="col-md-12" class="justWaxing">
+                     <h1>JUST WAXING</h1>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-12" class="profSzort">
+                        <h5>Professzionalis Szõrtelenítés</h5>
+                     </div>
+                  </div>
+                  <!-- <img src="assets/images/jWingLogo.png" width="500px" height="200px"> -->
                </div>
-               <!-- <img src="assets/images/jWingLogo.png" width="500px" height="200px"> -->
             </div>
-         </div>
             <div class="col-md-8" id="navBar">
                <ul>
                   <li data-toggle="modal" data-target="#rolunkModal">Rólunk</li>
@@ -52,7 +59,7 @@
                         </div>
                      </div>
                   </div>
-                   <div class="dropdown" style="float:left;">
+                  <div class="dropdown" style="float:left;">
                      <li class="dropbtn">Szolgáltatások</li>
                      <div class="dropdown-content" style="left:0;">
                         <a data-toggle="modal" data-target="#holgyekModal">Hölgyek</a>
@@ -87,7 +94,7 @@
                      </div>
                   </div>
                   <li data-toggle="modal" data-target="#gyantaModal">A gyantáról</li>
-                   <!-- Gyanta Modal -->
+                  <!-- Gyanta Modal -->
                   <div id="gyantaModal" class="modal fade" role="dialog">
                      <div class="modal-dialog">
                         <!-- Modal content-->
@@ -106,7 +113,7 @@
                                     <p>A melegítő edényben felmelegített gyantát egy fa spatula segítségével visszük fel a szőrteleníteni kívánt területre és megszilárdulás után kézzel tépjük az le.</p>
                                     <p>Ezt a gyantát alkalmazzuk  bajusz , hónalj, szemöldök, arc és intim területeken.</p>
                                  </div>
-                                  <div class="col-md-6">
+                                 <div class="col-md-6">
                                     <h4>Patronos Gyanta:</h4>
                                     <br>
                                     <p>Ebben az esetben a patronos gyantamelegítőben melegítjük fel a gyantát és a gyanta felkenése után gyantalehúzó csík segítségével tépjük le azt. Ezt a gyantát karra ,lábra illetve nagyobb területekre szoktuk alkalmazni.</p>
@@ -133,299 +140,305 @@
                      </div>
                   </div>
                </ul>
-         </div>
-      </div>
-
-      <!-- Urak Arlista -->
-                          <div id="urakModal" class="modal fade" role="dialog">
-                     <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                           <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              <div class="modalLogo">
-                              </div>
-                           </div>
-                           <div class="modal-body">
-                              <div class="row">
-                                 <div class="col-md-12">
-                                    <table class="table table-hover" class="table table-responsive">
-                                 <thead>
-                                    <tr>
-                                       <th>#</th>
-                                       <th>Szolgáltatás Neve</th>
-                                       <th>Árak</th>
-                                    </tr>
-                                 </thead>
-                                 <tbody>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Hónalj</td>
-                                       <td>1700Ft</td>
-                                    </tr>
-                                     <tr>
-                                       <th scope="row">-</th>
-                                       <td>Alkar</td>
-                                       <td>2300Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Felkar</td>
-                                       <td>2000Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Teljes kar (kézfej, ujjak)</td>
-                                       <td>3700Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Láb térdig</td>
-                                       <td>3000Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Comb</td>
-                                       <td>3100Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Teljes láb (lábfej, ujjak is)</td>
-                                       <td>5100Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Mellkas</td>
-                                       <td>2700Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Mellbimbó</td>
-                                       <td>1200Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Has</td>
-                                       <td>2100Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Teljes front (mellkas, mellbimbó, has)</td>
-                                       <td>4600Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Hát</td>
-                                       <td>2800Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Derék</td>
-                                       <td>2100Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Teljes hát,1' (hát, derék)</td>
-                                       <td>4000Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Teljes hát,2' (hát, derék, tarkó, váll)</td>
-                                       <td>4500Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Tarkó</td>
-                                       <td>1500Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Váll</td>
-                                       <td>1700Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Váll + tarkó</td>
-                                       <td>2600Ft</td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="modal-footer">
-                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-  <!-- Holgyek Arlista -->
-                  <div id="holgyekModal" class="modal fade" role="dialog">
-                     <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                           <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              <div class="modalLogo">
-                              </div>
-                           </div>
-                           <div class="modal-body">
-                             <table class="table table-hover" class="table table-responsive">
-                                 <thead>
-                                    <tr>
-                                       <th>#</th>
-                                       <th>Szolgáltatás Neve</th>
-                                       <th>Árak</th>
-                                    </tr>
-                                 </thead>
-                                 <tbody>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Szemöldõk</td>
-                                       <td>1000Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Bajusz</td>
-                                       <td>1000Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Áll</td>
-                                       <td>1000Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Pajesz</td>
-                                       <td>1000Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Teljes Arc (szemöldök, bajusz, áll, pajesz)</td>
-                                       <td>3000Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Hónalj</td>
-                                       <td>1400Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Alkar</td>
-                                       <td>1800Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Felkar</td>
-                                       <td>1300Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Teljes kar (kézfej, ujjak)</td>
-                                       <td>2500Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Láb térdig</td>
-                                       <td>2600Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Comb</td>
-                                       <td>2100Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Teljes láb (lábfej, ujjak is)</td>
-                                       <td>3800Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Hascsík</td>
-                                       <td>1000Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Derék</td>
-                                       <td>1300Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Bikini fazon (bugyi vonalig)</td>
-                                       <td>2000Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Részleges intim,1' (szeméremdomb formára igazítás, szeméremajkak)</td>
-                                       <td>2800Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Részleges intim,2'- Brazil (szeméremdomb formára igazítás, szeméremajkak, fenék belsô ív)</td>
-                                       <td>3500Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Teljes intim - Hollywood (szeméremdomb teljes, szeméremajkak, fenék belsô ív)</td>
-                                       <td>4200Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Fenék belsô ív</td>
-                                       <td>2000Ft</td>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">-</th>
-                                       <td>Fenek külsô ív (farpofák)</td>
-                                       <td>1700Ft</td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-                           </div>
-                           <div class="modal-footer">
-                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-<!-- Tini waxing modal  -->
-                  <div id="tiniModal" class="modal fade" role="dialog">
-                     <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                           <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              <div class="modalLogo">
-                              </div>
-                           </div>
-                           <div class="modal-body">
-                             <div class="row">
-                                 <div class="col-md-12">
-                                    <h4>Tini waxing:</h4>
-                                    <br>
-                                    <p>18.életévét be nem töltött vendégek számára 20% kedvezmény.</p>
-                                    <p>Az intim gyantázást csak 16. életévét betöltött vendégek vehetik igénybe.</p>
-                                    <p>18 év alatt minden gyantázási szolgáltatás csakis szülő által aláírt beleegyező nyilatkozattal vehető igénybe .Mely átvehető az üzletben vagy letölthető innen.</p>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="modal-footer">
-                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-      </nav>
-      <div class="container">
-          <div class="copyright">
-            <span>Copyright &copy;</span> 2018 Just Waxing. All rights reserved | Designed by <a href="https://bettivillam.com/" target="_blank">Betti Villam </a>
             </div>
+         </div>
+         <!-- Urak Arlista -->
+         <div id="urakModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+               <!-- Modal content-->
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+                     <div class="modalLogo">
+                     </div>
+                  </div>
+                  <div class="modal-body">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <table class="table table-hover" class="table table-responsive">
+                              <thead>
+                                 <tr>
+                                    <th>#</th>
+                                    <th>Szolgáltatás Neve</th>
+                                    <th>Árak</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <th scope="row">-</th>
+                                    <td>Hónalj</td>
+                                    <td>1700Ft</td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">-</th>
+                                    <td>Alkar</td>
+                                    <td>2300Ft</td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">-</th>
+                                    <td>Felkar</td>
+                                    <td>2000Ft</td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">-</th>
+                                    <td>Teljes kar (kézfej, ujjak)</td>
+                                    <td>3700Ft</td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">-</th>
+                                    <td>Láb térdig</td>
+                                    <td>3000Ft</td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">-</th>
+                                    <td>Comb</td>
+                                    <td>3100Ft</td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">-</th>
+                                    <td>Teljes láb (lábfej, ujjak is)</td>
+                                    <td>5100Ft</td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">-</th>
+                                    <td>Mellkas</td>
+                                    <td>2700Ft</td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">-</th>
+                                    <td>Mellbimbó</td>
+                                    <td>1200Ft</td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">-</th>
+                                    <td>Has</td>
+                                    <td>2100Ft</td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">-</th>
+                                    <td>Teljes front (mellkas, mellbimbó, has)</td>
+                                    <td>4600Ft</td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">-</th>
+                                    <td>Hát</td>
+                                    <td>2800Ft</td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">-</th>
+                                    <td>Derék</td>
+                                    <td>2100Ft</td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">-</th>
+                                    <td>Teljes hát,1' (hát, derék)</td>
+                                    <td>4000Ft</td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">-</th>
+                                    <td>Teljes hát,2' (hát, derék, tarkó, váll)</td>
+                                    <td>4500Ft</td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">-</th>
+                                    <td>Tarkó</td>
+                                    <td>1500Ft</td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">-</th>
+                                    <td>Váll</td>
+                                    <td>1700Ft</td>
+                                 </tr>
+                                 <tr>
+                                    <th scope="row">-</th>
+                                    <td>Váll + tarkó</td>
+                                    <td>2600Ft</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Holgyek Arlista -->
+         <div id="holgyekModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+               <!-- Modal content-->
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+                     <div class="modalLogo">
+                     </div>
+                  </div>
+                  <div class="modal-body">
+                     <table class="table table-hover" class="table table-responsive">
+                        <thead>
+                           <tr>
+                              <th>#</th>
+                              <th>Szolgáltatás Neve</th>
+                              <th>Árak</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <th scope="row">-</th>
+                              <td>Szemöldõk</td>
+                              <td>1000Ft</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">-</th>
+                              <td>Bajusz</td>
+                              <td>1000Ft</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">-</th>
+                              <td>Áll</td>
+                              <td>1000Ft</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">-</th>
+                              <td>Pajesz</td>
+                              <td>1000Ft</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">-</th>
+                              <td>Teljes Arc (szemöldök, bajusz, áll, pajesz)</td>
+                              <td>3000Ft</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">-</th>
+                              <td>Hónalj</td>
+                              <td>1400Ft</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">-</th>
+                              <td>Alkar</td>
+                              <td>1800Ft</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">-</th>
+                              <td>Felkar</td>
+                              <td>1300Ft</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">-</th>
+                              <td>Teljes kar (kézfej, ujjak)</td>
+                              <td>2500Ft</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">-</th>
+                              <td>Láb térdig</td>
+                              <td>2600Ft</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">-</th>
+                              <td>Comb</td>
+                              <td>2100Ft</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">-</th>
+                              <td>Teljes láb (lábfej, ujjak is)</td>
+                              <td>3800Ft</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">-</th>
+                              <td>Hascsík</td>
+                              <td>1000Ft</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">-</th>
+                              <td>Derék</td>
+                              <td>1300Ft</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">-</th>
+                              <td>Bikini fazon (bugyi vonalig)</td>
+                              <td>2000Ft</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">-</th>
+                              <td>Részleges intim,1' (szeméremdomb formára igazítás, szeméremajkak)</td>
+                              <td>2800Ft</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">-</th>
+                              <td>Részleges intim,2'- Brazil (szeméremdomb formára igazítás, szeméremajkak, fenék belsô ív)</td>
+                              <td>3500Ft</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">-</th>
+                              <td>Teljes intim - Hollywood (szeméremdomb teljes, szeméremajkak, fenék belsô ív)</td>
+                              <td>4200Ft</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">-</th>
+                              <td>Fenék belsô ív</td>
+                              <td>2000Ft</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">-</th>
+                              <td>Fenek külsô ív (farpofák)</td>
+                              <td>1700Ft</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Tini waxing modal  -->
+         <div id="tiniModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+               <!-- Modal content-->
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+                     <div class="modalLogo">
+                     </div>
+                  </div>
+                  <div class="modal-body">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <h4>Tini waxing:</h4>
+                           <br>
+                           <p>18.életévét be nem töltött vendégek számára 20% kedvezmény.</p>
+                           <p>Az intim gyantázást csak 16. életévét betöltött vendégek vehetik igénybe.</p>
+                           <p>18 év alatt minden gyantázási szolgáltatás csakis szülő által aláírt beleegyező nyilatkozattal vehető igénybe, mely átvehető az üzletben vagy letölthető <a href="assets/images/belegyezo_ny.pdf" target="_blank" download>innen.</a></p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- <div id="text"></div> -->
+      <div class="container">
+         <div class="copyright">
+            <span>Copyright &copy;</span> 2018 Just Waxing. All rights reserved | Designed by <a href="https://bettivillam.com/" target="_blank">Betti Villam </a>
+         </div>
          <img src="assets/images/bodyImg.jpg" alt="Body" height="600px" width="1440px">
+         <div class="textContainer">
+            <p>Ha gondot jelent az intim területek szőrtelenítése...</p>
+            <p>Ha eleged van már a borotválás okozta kellemetlenségekből...</p>
+            <p>Ha ápolt, sima bőrre vágysz...</p>
+            <p>...akkor itt az ideje, hogy legyen egy saját intimkozmetikusod!</p>
+         </div>
       </div>
    </body>
    <br>
    <br>
-  <!--  <footer>
+   <!--  <footer>
       <span class="copyright">Copyright &copy;</span> 2018 Just Waxing. All rights reserved | Designed by <a href="https://bettivillam.com/" target="_blank">Betti Villam </a>
-   </footer> -->
+      </footer> -->
 </html>
