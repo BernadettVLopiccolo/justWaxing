@@ -4,10 +4,10 @@
       <title>Just Waxing</title>
       <link rel="stylesheet" type="text/css" href="assets/css/index.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script type="text/javascript" src="assets/js/web.js"></script>
-      <!-- <script src="https://cdn.jsdelivr.net/npm/typeit@VERSION_NUMBER/dist/typeit.min.js"/> -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- <script type="text/javascript" src="assets/js/web.js"></script> -->
+      <!-- <script src="https://cdn.jsdelivr.net/npm/typeit@VERSION_NUMBER/dist/typeit.min.js"/>
+ -->      <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -18,7 +18,6 @@
       <nav>
          <div class="row">
             <div class="col-md-4">
-               <!-- <div class="col-md-4" id="img"> -->
                <div class="row" id="logoContainer">
                   <div class="col-md-12" class="justWaxing">
                      <h1>JUST WAXING</h1>
@@ -28,37 +27,11 @@
                         <h5>Professzionalis Szõrtelenítés</h5>
                      </div>
                   </div>
-                  <!-- <img src="assets/images/jWingLogo.png" width="500px" height="200px"> -->
                </div>
             </div>
             <div class="col-md-8" id="navBar">
                <ul>
                   <li data-toggle="modal" data-target="#rolunkModal">Rólunk</li>
-                  <!-- Rolunk Modal -->
-                  <div id="rolunkModal" class="modal fade" role="dialog">
-                     <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                           <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              <div class="modalLogo">
-                              </div>
-                           </div>
-                           <div class="modal-body">
-                              <div class="row">
-                                 <div class="col-md-12">
-                                    <p>A Just waxing egy professzionális gyantázással foglalkozó szalon, ahol kortól és nemtől függetlenül mindenki igénybe veheti a szolgáltatásainkat.</p>
-                                    <p>Egy paragrafus rólad, tapasztalat, mért szereted amit csinálsz.</p>
-                                    <p>Miért fontos a gyantázás. Sportoláshoz stb. bele is írhatod hogy te magad is futsz.</p>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="modal-footer">
-                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
                   <div class="dropdown" style="float:left;">
                      <li class="dropbtn">Szolgáltatások</li>
                      <div class="dropdown-content" style="left:0;">
@@ -68,362 +41,12 @@
                      </div>
                   </div>
                   <li data-toggle="modal" data-target="#idopontModal">Bejelentkezés</li>
-                  <!-- Bejelentkezes Modal -->
-                  <div id="idopontModal" class="modal fade" role="dialog">
-                     <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                           <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              <div class="modalLogo">
-                              </div>
-                           </div>
-                           <div class="modal-body">
-                              <div class="row">
-                                 <div class="col-md-12">
-                                    <p>Nyitva tartás</p>
-                                    <p>Telefon</p>
-                                    <p>Cím</p>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="modal-footer">
-                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
                   <li data-toggle="modal" data-target="#gyantaModal">A gyantáról</li>
-                  <!-- Gyanta Modal -->
-                  <div id="gyantaModal" class="modal fade" role="dialog">
-                     <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                           <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              <div class="modalLogo">
-                              </div>
-                           </div>
-                           <div class="modal-body">
-                              <div class="row">
-                                 <div class="col-md-6">
-                                    <h4>Krém Gyanta:</h4>
-                                    <br>
-                                    <p>Az intim területek gyantázása egy speciális elasztikus gyöngygyantával történik, mely nem tapad a bőrhöz ,hanem a szőrszálakat körbe ölelve, kíméletesen távolítja el azt.</p>
-                                    <p>A melegítő edényben felmelegített gyantát egy fa spatula segítségével visszük fel a szőrteleníteni kívánt területre és megszilárdulás után kézzel tépjük az le.</p>
-                                    <p>Ezt a gyantát alkalmazzuk  bajusz , hónalj, szemöldök, arc és intim területeken.</p>
-                                 </div>
-                                 <div class="col-md-6">
-                                    <h4>Patronos Gyanta:</h4>
-                                    <br>
-                                    <p>Ebben az esetben a patronos gyantamelegítőben melegítjük fel a gyantát és a gyanta felkenése után gyantalehúzó csík segítségével tépjük le azt. Ezt a gyantát karra ,lábra illetve nagyobb területekre szoktuk alkalmazni.</p>
-                                 </div>
-                              </div>
-                              <br>
-                              <div class="row">
-                                 <div class="col-md-12">
-                                    <h4>A gyantázás menete:</h4>
-                                    <br>
-                                    <p>Első gyantázáskor az optimális szőrhosszúság a legutolsó borotválástól számított 1,5-2 hét között van(általában fél-1 cm hosszú, ha ennél hosszabb az sem gond. De ha nem elég hosszú a gyanta nem tud belekapaszkodnia szőrbe és eredménytelen lesz a gyantázás)</p>
-                                    <p>A gyantázás a várótól elkülönített kezelőhelyiségben egy egyszer használatos papírlepedővel letakart kezelőágyon történik. Gyantázás előtt előkészítjük a szőrteleníteni kívánt területet egy tisztító és fertőtlenítő hatású géllel. Majd következik a gyantázás. Gyantázás után az estelegesen a bőrön maradt gyantadarabokat egy tisztító olajjal eltávolítjuk, majd egy hűsítő nyugtató hatású krémmel zárul a gyantázás menete.</p>
-                                    <p>Mire figyelj gyantázás után?.</p>
-                                    <p>-Gyantázás után lehetőleg már ne végezz fokozott verejtékezéssel járó tevékenységet (pl.edzés)</p>
-                                    <p>-Gyantázás után 24h belül ne menj szaunába, szoláriumba, közösségi fürdőbe, és ne napozz!</p>
-                                 </div>
-                              </div>
-                              <br>
-                           </div>
-                           <div class="modal-footer">
-                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
                </ul>
             </div>
          </div>
-         <!-- Urak Arlista -->
-         <div id="urakModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-               <!-- Modal content-->
-               <div class="modal-content">
-                  <div class="modal-header">
-                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                     <div class="modalLogo">
-                     </div>
-                  </div>
-                  <div class="modal-body">
-                     <div class="row">
-                        <div class="col-md-12">
-                           <table class="table table-hover" class="table table-responsive">
-                              <thead>
-                                 <tr>
-                                    <th>#</th>
-                                    <th>Szolgáltatás Neve</th>
-                                    <th>Árak</th>
-                                 </tr>
-                              </thead>
-                              <tbody>
-                                 <tr>
-                                    <th scope="row">-</th>
-                                    <td>Hónalj</td>
-                                    <td>1700Ft</td>
-                                 </tr>
-                                 <tr>
-                                    <th scope="row">-</th>
-                                    <td>Alkar</td>
-                                    <td>2300Ft</td>
-                                 </tr>
-                                 <tr>
-                                    <th scope="row">-</th>
-                                    <td>Felkar</td>
-                                    <td>2000Ft</td>
-                                 </tr>
-                                 <tr>
-                                    <th scope="row">-</th>
-                                    <td>Teljes kar (kézfej, ujjak)</td>
-                                    <td>3700Ft</td>
-                                 </tr>
-                                 <tr>
-                                    <th scope="row">-</th>
-                                    <td>Láb térdig</td>
-                                    <td>3000Ft</td>
-                                 </tr>
-                                 <tr>
-                                    <th scope="row">-</th>
-                                    <td>Comb</td>
-                                    <td>3100Ft</td>
-                                 </tr>
-                                 <tr>
-                                    <th scope="row">-</th>
-                                    <td>Teljes láb (lábfej, ujjak is)</td>
-                                    <td>5100Ft</td>
-                                 </tr>
-                                 <tr>
-                                    <th scope="row">-</th>
-                                    <td>Mellkas</td>
-                                    <td>2700Ft</td>
-                                 </tr>
-                                 <tr>
-                                    <th scope="row">-</th>
-                                    <td>Mellbimbó</td>
-                                    <td>1200Ft</td>
-                                 </tr>
-                                 <tr>
-                                    <th scope="row">-</th>
-                                    <td>Has</td>
-                                    <td>2100Ft</td>
-                                 </tr>
-                                 <tr>
-                                    <th scope="row">-</th>
-                                    <td>Teljes front (mellkas, mellbimbó, has)</td>
-                                    <td>4600Ft</td>
-                                 </tr>
-                                 <tr>
-                                    <th scope="row">-</th>
-                                    <td>Hát</td>
-                                    <td>2800Ft</td>
-                                 </tr>
-                                 <tr>
-                                    <th scope="row">-</th>
-                                    <td>Derék</td>
-                                    <td>2100Ft</td>
-                                 </tr>
-                                 <tr>
-                                    <th scope="row">-</th>
-                                    <td>Teljes hát,1' (hát, derék)</td>
-                                    <td>4000Ft</td>
-                                 </tr>
-                                 <tr>
-                                    <th scope="row">-</th>
-                                    <td>Teljes hát,2' (hát, derék, tarkó, váll)</td>
-                                    <td>4500Ft</td>
-                                 </tr>
-                                 <tr>
-                                    <th scope="row">-</th>
-                                    <td>Tarkó</td>
-                                    <td>1500Ft</td>
-                                 </tr>
-                                 <tr>
-                                    <th scope="row">-</th>
-                                    <td>Váll</td>
-                                    <td>1700Ft</td>
-                                 </tr>
-                                 <tr>
-                                    <th scope="row">-</th>
-                                    <td>Váll + tarkó</td>
-                                    <td>2600Ft</td>
-                                 </tr>
-                              </tbody>
-                           </table>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="modal-footer">
-                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- Holgyek Arlista -->
-         <div id="holgyekModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-               <!-- Modal content-->
-               <div class="modal-content">
-                  <div class="modal-header">
-                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                     <div class="modalLogo">
-                     </div>
-                  </div>
-                  <div class="modal-body">
-                     <table class="table table-hover" class="table table-responsive">
-                        <thead>
-                           <tr>
-                              <th>#</th>
-                              <th>Szolgáltatás Neve</th>
-                              <th>Árak</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <th scope="row">-</th>
-                              <td>Szemöldõk</td>
-                              <td>1000Ft</td>
-                           </tr>
-                           <tr>
-                              <th scope="row">-</th>
-                              <td>Bajusz</td>
-                              <td>1000Ft</td>
-                           </tr>
-                           <tr>
-                              <th scope="row">-</th>
-                              <td>Áll</td>
-                              <td>1000Ft</td>
-                           </tr>
-                           <tr>
-                              <th scope="row">-</th>
-                              <td>Pajesz</td>
-                              <td>1000Ft</td>
-                           </tr>
-                           <tr>
-                              <th scope="row">-</th>
-                              <td>Teljes Arc (szemöldök, bajusz, áll, pajesz)</td>
-                              <td>3000Ft</td>
-                           </tr>
-                           <tr>
-                              <th scope="row">-</th>
-                              <td>Hónalj</td>
-                              <td>1400Ft</td>
-                           </tr>
-                           <tr>
-                              <th scope="row">-</th>
-                              <td>Alkar</td>
-                              <td>1800Ft</td>
-                           </tr>
-                           <tr>
-                              <th scope="row">-</th>
-                              <td>Felkar</td>
-                              <td>1300Ft</td>
-                           </tr>
-                           <tr>
-                              <th scope="row">-</th>
-                              <td>Teljes kar (kézfej, ujjak)</td>
-                              <td>2500Ft</td>
-                           </tr>
-                           <tr>
-                              <th scope="row">-</th>
-                              <td>Láb térdig</td>
-                              <td>2600Ft</td>
-                           </tr>
-                           <tr>
-                              <th scope="row">-</th>
-                              <td>Comb</td>
-                              <td>2100Ft</td>
-                           </tr>
-                           <tr>
-                              <th scope="row">-</th>
-                              <td>Teljes láb (lábfej, ujjak is)</td>
-                              <td>3800Ft</td>
-                           </tr>
-                           <tr>
-                              <th scope="row">-</th>
-                              <td>Hascsík</td>
-                              <td>1000Ft</td>
-                           </tr>
-                           <tr>
-                              <th scope="row">-</th>
-                              <td>Derék</td>
-                              <td>1300Ft</td>
-                           </tr>
-                           <tr>
-                              <th scope="row">-</th>
-                              <td>Bikini fazon (bugyi vonalig)</td>
-                              <td>2000Ft</td>
-                           </tr>
-                           <tr>
-                              <th scope="row">-</th>
-                              <td>Részleges intim,1' (szeméremdomb formára igazítás, szeméremajkak)</td>
-                              <td>2800Ft</td>
-                           </tr>
-                           <tr>
-                              <th scope="row">-</th>
-                              <td>Részleges intim,2'- Brazil (szeméremdomb formára igazítás, szeméremajkak, fenék belsô ív)</td>
-                              <td>3500Ft</td>
-                           </tr>
-                           <tr>
-                              <th scope="row">-</th>
-                              <td>Teljes intim - Hollywood (szeméremdomb teljes, szeméremajkak, fenék belsô ív)</td>
-                              <td>4200Ft</td>
-                           </tr>
-                           <tr>
-                              <th scope="row">-</th>
-                              <td>Fenék belsô ív</td>
-                              <td>2000Ft</td>
-                           </tr>
-                           <tr>
-                              <th scope="row">-</th>
-                              <td>Fenek külsô ív (farpofák)</td>
-                              <td>1700Ft</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-                  <div class="modal-footer">
-                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- Tini waxing modal  -->
-         <div id="tiniModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-               <!-- Modal content-->
-               <div class="modal-content">
-                  <div class="modal-header">
-                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                     <div class="modalLogo">
-                     </div>
-                  </div>
-                  <div class="modal-body">
-                     <div class="row">
-                        <div class="col-md-12">
-                           <h4>Tini waxing:</h4>
-                           <br>
-                           <p>18. életévét be nem töltött vendégek számára 20% kedvezmény.</p>
-                           <p>Az intim gyantázást csak 16. életévét betöltött vendégek vehetik igénybe.</p>
-                           <p>18 év alatt minden gyantázási szolgáltatás csakis szülő által aláírt beleegyező nyilatkozattal vehető igénybe, mely átvehető az üzletben vagy letölthető <a href="assets/images/belegyezo_ny.pdf" target="_blank" download>innen.</a></p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="modal-footer">
-                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
-               </div>
-            </div>
-         </div>
       </nav>
-      <!-- <div id="text"></div> -->
-      <div class="container">
+      <div class="jumbotron">
          <div class="copyright">
             <span>Copyright &copy;</span> 2018 Just Waxing. All rights reserved | Designed by <a href="https://bettivillam.com/" target="_blank">Betti Villam </a>
          </div>
@@ -435,6 +58,384 @@
             <p>...akkor itt az ideje, hogy legyen egy saját intimkozmetikusod!</p>
          </div>
       </div>
+      <!-- Rolunk Modal -->
+      <div id="rolunkModal" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <div class="modalLogo">
+                  </div>
+               </div>
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="col-md-12" class="text">
+                        <p>A Just waxing egy professzionális gyantázással foglalkozó szalon, ahol kortól és nemtől függetlenül mindenki igénybe veheti a szolgáltatásainkat.</p>
+                        <p>Egy paragrafus rólad, tapasztalat, mért szereted amit csinálsz.</p>
+                        <p>Miért fontos a gyantázás. Sportoláshoz stb. bele is írhatod hogy te magad is futsz.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Holgyek Arlista -->
+      <div id="holgyekModal" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <div class="modalLogo">
+                  </div>
+               </div>
+               <div class="modal-body">
+                  <table class="table table-hover" class="table table-responsive">
+                     <thead>
+                        <tr>
+                           <th>#</th>
+                           <th>Szolgáltatás Neve</th>
+                           <th>Árak</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <th scope="row">-</th>
+                           <td>Szemöldõk</td>
+                           <td>1000Ft</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">-</th>
+                           <td>Bajusz</td>
+                           <td>1000Ft</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">-</th>
+                           <td>Áll</td>
+                           <td>1000Ft</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">-</th>
+                           <td>Pajesz</td>
+                           <td>1000Ft</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">-</th>
+                           <td>Teljes Arc (szemöldök, bajusz, áll, pajesz)</td>
+                           <td>3000Ft</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">-</th>
+                           <td>Hónalj</td>
+                           <td>1400Ft</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">-</th>
+                           <td>Alkar</td>
+                           <td>1800Ft</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">-</th>
+                           <td>Felkar</td>
+                           <td>1300Ft</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">-</th>
+                           <td>Teljes kar (kézfej, ujjak)</td>
+                           <td>2500Ft</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">-</th>
+                           <td>Láb térdig</td>
+                           <td>2600Ft</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">-</th>
+                           <td>Comb</td>
+                           <td>2100Ft</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">-</th>
+                           <td>Teljes láb (lábfej, ujjak is)</td>
+                           <td>3800Ft</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">-</th>
+                           <td>Hascsík</td>
+                           <td>1000Ft</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">-</th>
+                           <td>Derék</td>
+                           <td>1300Ft</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">-</th>
+                           <td>Bikini fazon (bugyi vonalig)</td>
+                           <td>2000Ft</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">-</th>
+                           <td>Részleges intim,1' (szeméremdomb formára igazítás, szeméremajkak)</td>
+                           <td>2800Ft</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">-</th>
+                           <td>Részleges intim,2'- Brazil (szeméremdomb formára igazítás, szeméremajkak, fenék belsô ív)</td>
+                           <td>3500Ft</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">-</th>
+                           <td>Teljes intim - Hollywood (szeméremdomb teljes, szeméremajkak, fenék belsô ív)</td>
+                           <td>4200Ft</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">-</th>
+                           <td>Fenék belsô ív</td>
+                           <td>2000Ft</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">-</th>
+                           <td>Fenek külsô ív (farpofák)</td>
+                           <td>1700Ft</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Urak Arlista -->
+      <div id="urakModal" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <div class="modalLogo">
+                  </div>
+               </div>
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <table class="table table-hover" class="table table-responsive">
+                           <thead>
+                              <tr>
+                                 <th>#</th>
+                                 <th>Szolgáltatás Neve</th>
+                                 <th>Árak</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <th scope="row">-</th>
+                                 <td>Hónalj</td>
+                                 <td>1700Ft</td>
+                              </tr>
+                              <tr>
+                                 <th scope="row">-</th>
+                                 <td>Alkar</td>
+                                 <td>2300Ft</td>
+                              </tr>
+                              <tr>
+                                 <th scope="row">-</th>
+                                 <td>Felkar</td>
+                                 <td>2000Ft</td>
+                              </tr>
+                              <tr>
+                                 <th scope="row">-</th>
+                                 <td>Teljes kar (kézfej, ujjak)</td>
+                                 <td>3700Ft</td>
+                              </tr>
+                              <tr>
+                                 <th scope="row">-</th>
+                                 <td>Láb térdig</td>
+                                 <td>3000Ft</td>
+                              </tr>
+                              <tr>
+                                 <th scope="row">-</th>
+                                 <td>Comb</td>
+                                 <td>3100Ft</td>
+                              </tr>
+                              <tr>
+                                 <th scope="row">-</th>
+                                 <td>Teljes láb (lábfej, ujjak is)</td>
+                                 <td>5100Ft</td>
+                              </tr>
+                              <tr>
+                                 <th scope="row">-</th>
+                                 <td>Mellkas</td>
+                                 <td>2700Ft</td>
+                              </tr>
+                              <tr>
+                                 <th scope="row">-</th>
+                                 <td>Mellbimbó</td>
+                                 <td>1200Ft</td>
+                              </tr>
+                              <tr>
+                                 <th scope="row">-</th>
+                                 <td>Has</td>
+                                 <td>2100Ft</td>
+                              </tr>
+                              <tr>
+                                 <th scope="row">-</th>
+                                 <td>Teljes front (mellkas, mellbimbó, has)</td>
+                                 <td>4600Ft</td>
+                              </tr>
+                              <tr>
+                                 <th scope="row">-</th>
+                                 <td>Hát</td>
+                                 <td>2800Ft</td>
+                              </tr>
+                              <tr>
+                                 <th scope="row">-</th>
+                                 <td>Derék</td>
+                                 <td>2100Ft</td>
+                              </tr>
+                              <tr>
+                                 <th scope="row">-</th>
+                                 <td>Teljes hát,1' (hát, derék)</td>
+                                 <td>4000Ft</td>
+                              </tr>
+                              <tr>
+                                 <th scope="row">-</th>
+                                 <td>Teljes hát,2' (hát, derék, tarkó, váll)</td>
+                                 <td>4500Ft</td>
+                              </tr>
+                              <tr>
+                                 <th scope="row">-</th>
+                                 <td>Tarkó</td>
+                                 <td>1500Ft</td>
+                              </tr>
+                              <tr>
+                                 <th scope="row">-</th>
+                                 <td>Váll</td>
+                                 <td>1700Ft</td>
+                              </tr>
+                              <tr>
+                                 <th scope="row">-</th>
+                                 <td>Váll + tarkó</td>
+                                 <td>2600Ft</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Tini waxing modal  -->
+      <div id="tiniModal" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <div class="modalLogo">
+                  </div>
+               </div>
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <h4>Tini waxing:</h4>
+                        <br>
+                        <p>18. életévét be nem töltött vendégek számára 20% kedvezmény.</p>
+                        <p>Az intim gyantázást csak 16. életévét betöltött vendégek vehetik igénybe.</p>
+                        <p>18 év alatt minden gyantázási szolgáltatás csakis szülő által aláírt beleegyező nyilatkozattal vehető igénybe, mely átvehető az üzletben vagy letölthető <a href="assets/images/belegyezo_ny.pdf" target="_blank" download>innen.</a></p>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Bejelentkezes Modal -->
+      <div id="idopontModal" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <div class="modalLogo">
+                  </div>
+               </div>
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>Nyitva tartás</p>
+                        <p>Telefon</p>
+                        <p>Cím</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Gyanta Modal -->
+      <div id="gyantaModal" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <div class="modalLogo">
+                  </div>
+               </div>
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <h4>Krém Gyanta:</h4>
+                        <br>
+                        <p>Az intim területek gyantázása egy speciális elasztikus gyöngygyantával történik, mely nem tapad a bőrhöz ,hanem a szőrszálakat körbe ölelve, kíméletesen távolítja el azt.</p>
+                        <p>A melegítő edényben felmelegített gyantát egy fa spatula segítségével visszük fel a szőrteleníteni kívánt területre és megszilárdulás után kézzel tépjük az le.</p>
+                        <p>Ezt a gyantát alkalmazzuk  bajusz , hónalj, szemöldök, arc és intim területeken.</p>
+                     </div>
+                     <div class="col-md-6">
+                        <h4>Patronos Gyanta:</h4>
+                        <br>
+                        <p>Ebben az esetben a patronos gyantamelegítőben melegítjük fel a gyantát és a gyanta felkenése után gyantalehúzó csík segítségével tépjük le azt. Ezt a gyantát karra ,lábra illetve nagyobb területekre szoktuk alkalmazni.</p>
+                     </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                     <div class="col-md-12">
+                        <h4>A gyantázás menete:</h4>
+                        <br>
+                        <p>Első gyantázáskor az optimális szőrhosszúság a legutolsó borotválástól számított 1,5-2 hét között van(általában fél-1 cm hosszú, ha ennél hosszabb az sem gond. De ha nem elég hosszú a gyanta nem tud belekapaszkodnia szőrbe és eredménytelen lesz a gyantázás).</p>
+                        <p>A gyantázás a várótól elkülönített kezelőhelyiségben egy egyszer használatos papírlepedővel letakart kezelőágyon történik. Gyantázás előtt előkészítjük a szőrteleníteni kívánt területet egy tisztító és fertőtlenítő hatású géllel. Majd következik a gyantázás. Gyantázás után az estelegesen a bőrön maradt gyantadarabokat egy tisztító olajjal eltávolítjuk, majd egy hűsítő nyugtató hatású krémmel zárul a gyantázás menete.</p>
+                        <p>Mire figyelj gyantázás után?.</p>
+                        <p>-Gyantázás után lehetőleg már ne végezz fokozott verejtékezéssel járó tevékenységet (pl.edzés)</p>
+                        <p>-Gyantázás után 24h belül ne menj szaunába, szoláriumba, közösségi fürdőbe, és ne napozz!</p>
+                     </div>
+                  </div>
+                  <br>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- <div id="text"></div> -->
+      <!-- <div class="cont">
+         <div class="text"></div>
+         </div> -->
    </body>
    <br>
    <br>
