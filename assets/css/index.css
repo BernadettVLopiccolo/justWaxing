@@ -76,15 +76,15 @@ ul {
 	background-color: #e5e5e5 !important;
 }
 
-#logoContainer {
+/*#logoContainer {
     margin-left: 40px;
-    /*margin-top: 30px;*/
+    margin-top: 30px;
     text-align: center;
     border: 3px solid;
     width: 300px;
     height: 110px;
     padding-bottom: 10px;
-}
+}*/
 
 h1 {
     font-family: Komoda !important;
