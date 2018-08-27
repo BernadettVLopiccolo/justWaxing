@@ -3,7 +3,7 @@ li {
 	display: inline;
     margin-top: 20px;
     float: left;
-    padding-right: 70px;
+    padding-right: 75px;
     font-size: 23px;
     /*font-weight: bold;*/
     color: #000;
@@ -126,7 +126,7 @@ h4 {
 
 .textContainer {
     position: absolute;
-    margin-top: -450px;
+    margin-top: -470px;
     margin-left: 450px;
     /*transform: translate(-50%, -50%);*/
     /*text-align: center;*/
@@ -144,9 +144,12 @@ h4 {
 
 #logo {
     border-radius: 25px;
+    margin-left: 10px;
 }
 
-
+#background {
+    margin-left: 110px;
+}
 /*#img {
     margin-left: 40px;
     margin-top: 20px;*/
@@ -202,11 +205,13 @@ h4 {
 }*/
 
 .copyright {
-    position: absolute;
-    margin-top: 560px;
-    margin-left: 500px;
+    /*position: absolute;*/
+    /*margin-top: 560px;*/
+    /*margin-left: 500px;*/
     font-size: 14px;
     font-family: comic sans ms;
+    float: right;
+    margin-right: 125px;
 
 }
 
