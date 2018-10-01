@@ -1,24 +1,29 @@
+body {
+    background-image: url("../images/marble.jpeg");
+    /*background-image: url("../images/body.jpeg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 
 li {
-	display: inline;
-    margin-top: 20px;
-    float: left;
+    display: inline;
+    margin-left: 140px;
+    vertical-align: middle;
     padding-right: 75px;
     font-size: 23px;
-    /*font-weight: bold;*/
-    color: #000;
-    text-decoration: underline;
-    /*font-family: Ruffle;*/
+    color: #61615f;
     font-family: comic sans ms;
 }
 
-.dropdown {
+.dropup {
     position: relative !important;
 }
 
 
-.dropdown-content {
-	margin-top: 50px;
+.dropup-content {
+    margin-left: 140px;
+    /*bottom: 50px;*/
     display: none;
     position: absolute !important;
     background-color: #f9f9f9;
@@ -28,52 +33,43 @@ li {
     font-family: comic sans ms;
 }
 
-.dropdown-content a {
+.dropup-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover {
-	background-color: #f1f1f1;
+.dropup-content a:hover {
+    background-color: #f1f1f1;
     cursor: pointer;
 }
 
-.dropdown:hover .dropdown-content {
+.dropup:hover .dropup-content {
     display: block;
+    margin-bottom: 100px;
 }
 
-
-li#dropdownMenuButton {
-	display: inline;
-    margin-top: 50px;
-    float: left;
-    padding-right: 10px;
-    font-size: 23px;
-    font-weight: bold;
-    color: #581415 !important;
-}
 
 li:hover {
-	color: #707070;
-	cursor: pointer;
+    text-decoration: line-through;
+    cursor: pointer;
 }
 
 ul {
-	list-style: none;
+    list-style: none;
     padding: 0;
     margin: 0;
-    background: #1bc2a2;
+    background: none !important;
 
 }
 
 .modalLogo {
-	text-align: center;
+    text-align: center;
 }
 
 .modal-content {
-	background-color: #e5e5e5 !important;
+    background-color: #e5e5e5 !important;
 }
 
 #logoContainer {
@@ -101,19 +97,25 @@ h5 {
 
 
 nav {
-    /*padding-top: 7px;*/
-	background-repeat: no-repeat;
-	background-size: cover;
-	/*padding: 30px 20px 30px 100px;*/
-    /*background-color: #cfc4d3;*/
-    /*  background-color: #e7d9cc;*/
-    height: 123px;
+    margin-top: 60px;
+}
+
+.image {
+    background-image: url("../images/body.jpeg");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 1000px;
+    margin-top: 80px;
+    margin-left: 230px;
 }
 
 p {
     text-align: center;
     color: #000 !important;
     font-family: comic sans ms;
+
 }
 
 h4 {
@@ -126,10 +128,9 @@ h4 {
 
 .textContainer {
     position: absolute;
-    margin-top: -470px;
-    margin-left: 450px;
-    /*transform: translate(-50%, -50%);*/
-    /*text-align: center;*/
+    margin-top: 250px;
+    margin-left: 50px;
+
 
 }
 
@@ -151,73 +152,30 @@ h4 {
     margin-left: 110px;
     border-radius: 25px;
 }
-/*#img {
-    margin-left: 40px;
-    margin-top: 20px;*/
-    /*margin-bottom: -50px;*/
-/*}*/
 
-#navBar{
-	margin-top: 20px;
-    /*margin-left: 40px;*/
-	/*margin-bottom: 10px;
-	margin-left: 800px;*/
-
-}
-
-/*#backgrndImg {
-    background-image: url("../images/bodyImg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 99%;
-    height: 600px;
-
-}*/
-
-/*footer {
-    text-align: right;
-    margin-right: 20px;
-    margin-bottom: 15px;
-    font-size: 12px;
-}*/
 
 .jumbotron {
-   /* position: relative !important;
-    text-align: right;
-    color: #000;
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-    width: 100%;*/
-    margin-top: -55px;
-    background-color: #fff !important;
+   background-color: inherit;
 
 }
 
-/*.cont {
-    background-image: url("../images/bodyImg.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    position: relative;
-    width: 1300px !important;
-    height: 550px !important;
-    padding-top: 100%:;
-}*/
-
-.copyright {
-    /*position: absolute;*/
-    /*margin-top: 560px;*/
-    /*margin-left: 500px;*/
+footer {
     font-size: 14px;
     font-family: comic sans ms;
-    float: right;
-    margin-right: 125px;
+    margin-top: 600px;
+    position: absolute;
 
 }
 
 @media only screen and (max-width: 576px) {
     p {
         font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .jumbotron {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
     }
 }
